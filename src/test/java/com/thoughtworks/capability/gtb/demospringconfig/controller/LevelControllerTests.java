@@ -18,7 +18,7 @@ public class LevelControllerTests {
     private MockMvc mockMvc;
 
     @Test
-    public void shouldReturnAdvancedWhenLevelNumberEqual1() throws Exception {
+    public void shouldReturnAdvancedWhenLevelNumberEqual1() throws Exception{
 
         mockMvc.perform(get("/level"))
                 .andExpect(content().string("advanced"));
