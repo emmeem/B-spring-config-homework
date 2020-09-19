@@ -20,22 +20,26 @@ public class LevelControllerTests {
 
     @Test
     public void shouldReturnBasicWhenLevelNumberEqual0() throws Exception {
-        ReflectionTestUtils.setField(levelController, "levelNumber", 0);
+        ReflectionTestUtils.setField(levelController, "levelNumber",0);
+
         mockMvc.perform(get("/level"))
                 .andExpect(content().string("basic"));
     }
 
     @Test
-    public void shouldReturnAdvancedWhenLevelNumberEqual1() throws Exception {
-        ReflectionTestUtils.setField(levelController, "levelNumber", 1);
+    public void shouldReturnBasicWhenLevelNumberEqual1() throws Exception {
+        ReflectionTestUtils.setField(levelController, "levelNumber",1);
+
         mockMvc.perform(get("/level"))
                 .andExpect(content().string("advanced"));
     }
 
     @Test
-    public void shouldReturnAdvancedWhenLevelNumberEqual2() throws Exception {
-        ReflectionTestUtils.setField(levelController, "levelNumber", 2);
+    public void shouldReturnBasicWhenLevelNumberEqual2() throws Exception {
+        ReflectionTestUtils.setField(levelController, "levelNumber",2);
+
         mockMvc.perform(get("/level"))
                 .andExpect(content().string("advanced"));
     }
+
 }
