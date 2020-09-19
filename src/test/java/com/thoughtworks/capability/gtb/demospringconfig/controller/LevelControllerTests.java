@@ -27,7 +27,7 @@ public class LevelControllerTests {
     }
 
     @Test
-    public void shouldReturnBasicWhenLevelNumberEqual1() throws Exception {
+    public void shouldReturnAdvancedWhenLevelNumberEqual1() throws Exception {
         ReflectionTestUtils.setField(levelController, "levelNumber",1);
 
         mockMvc.perform(get("/level"))
@@ -35,7 +35,7 @@ public class LevelControllerTests {
     }
 
     @Test
-    public void shouldReturnBasicWhenLevelNumberEqual2() throws Exception {
+    public void shouldReturnAdvancedWhenLevelNumberEqual2() throws Exception {
         ReflectionTestUtils.setField(levelController, "levelNumber",2);
 
         mockMvc.perform(get("/level"))
