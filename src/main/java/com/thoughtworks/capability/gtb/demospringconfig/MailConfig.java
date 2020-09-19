@@ -15,7 +15,7 @@ public class MailConfig {
     private int port;
     private String from;
     private List<String> defaultRecipients;
-    private Map<String,Boolean> additionalHeaders;
+    private Map<String, Boolean> additionalHeaders;
     private Credentials credentials;
 
     @Override

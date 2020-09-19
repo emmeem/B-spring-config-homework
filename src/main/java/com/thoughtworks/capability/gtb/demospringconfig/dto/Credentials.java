@@ -8,5 +8,4 @@ public class Credentials {
     private String password;
     private String authMethod;
 
-
 }
